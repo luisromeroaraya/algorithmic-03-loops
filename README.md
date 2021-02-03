@@ -80,6 +80,16 @@ while i<=n:
 II - print random number of integers
 - [ ] Write an algorithm which receives an random integer and prints from 0 to it.
 
+```
+import random
+n=random.randint(1,10)
+i=0
+print("The numbers from 0 to",n,":")
+while i <= n:
+    print(i)
+    i=i+1
+```
+
 III - throw dices
 - [ ] Write an algorithm which throws a dice a given number of time and count the number of time a certain number is received.
 
