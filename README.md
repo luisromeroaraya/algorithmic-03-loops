@@ -16,7 +16,8 @@ Ever had to repeat the same instructions multiple times in a row, look no furthe
 A *for loop* is usually used if you know how many iterations you need, a *while loop* iterates until a condition is met.
 
 Example
-```// The output will be "0 ... 9" on a new line
+```
+// The output will be "0 ... 9" on a new line
 for I = 0 until 9 do {
 	output($I)
 }
