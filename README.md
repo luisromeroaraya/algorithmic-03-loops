@@ -91,21 +91,18 @@ while i <= n:
 ```
 
 III - throw dices
-- [x] Write an algorithm which throws a dice a given number of time and count the number of time a certain number is received.
+- [x] Write an algorithm which throws a dice a given number of times and count the number of times a certain number is received.
+
 ```
 import random
-import time
-t=int(input("Please enter given number of seconds (1-10):"))
-t0=time.time()
-t1=t0+t
+t=int(input("Please enter given number of throws (1-100):"))
 n=int(input("Please enter certain number to count (1-6):"))
 total=0
+i=1
 
-print("Total seconds to throw dice:", t)
-
-while t0 <= t1:
+while i <= t:
     dice=random.randint(1,6)
-    t0=time.time()
+    i=i+1
     if dice == n:
         total=total+1
 
