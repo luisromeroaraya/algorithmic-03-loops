@@ -83,6 +83,7 @@ II - print random number of integers
 ```
 import random
 n=random.randint(1,10)
+
 i=0
 print("The numbers from 0 to",n,":")
 while i <= n:
@@ -97,9 +98,9 @@ III - throw dices
 import random
 t=int(input("Please enter given number of throws (1-100):"))
 n=int(input("Please enter certain number to count (1-6):"))
+
 total=0
 i=1
-
 while i <= t:
     dice=random.randint(1,6)
     i=i+1
@@ -110,7 +111,18 @@ print("Total times number", n, "was thrown:", total)
 ```
 
 IV - even numbers
-- [ ] Write an algorithm which prints all the even numbers from 0 to a given number.
+- [x] Write an algorithm which prints all the even numbers from 0 to a given number.
+
+```
+n=int(input("Please enter a number (0-10):"))
+
+i=0
+
+print("Even numbers from 1 to", n, ":")
+while i<=n:
+    print(i)
+    i=i+2
+```
 
 V - perfect number
 - [ ] Write an algorithm which verify if a given positive integer is a perfect number, meaning equal to the sum of his divisors (except himself).
