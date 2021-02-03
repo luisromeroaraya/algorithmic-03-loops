@@ -125,7 +125,23 @@ while i<=n:
 ```
 
 V - perfect number
-- [ ] Write an algorithm which verify if a given positive integer is a perfect number, meaning equal to the sum of his divisors (except himself).
+- [x] Write an algorithm which verify if a given positive integer is a perfect number, meaning equal to the sum of his divisors (except himself).
+
+```
+n=int(input("Please enter a number to verify (1-100):"))
+sum=0
+i=1
+
+while i<n:
+    if n%i == 0:   
+        sum=sum+i
+    i=i+1
+
+if sum == n:
+    print("The number",n,"is perfect")
+else:
+    print("The number",n,"is not perfect")
+```
 
 Resources
 * [conventions](https://github.com/becodeorg/BXL-Swartz-4-27/blob/master/1.The-Field/7.Algorithmic/conventions.adoc)
