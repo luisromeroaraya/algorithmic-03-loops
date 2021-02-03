@@ -45,10 +45,37 @@ I will be using [Python3](https://repl.it/languages/python3) to write and test t
 
 I - print numbers
 Write an algorithm which receives an integers *n* and prints:
-- [ ] the numbers from 1 to *n*
-- [ ] the numbers from 1 to *n* in descending order
-- [ ] the numbers from *-n* to *n*
-- [ ] the odd numbers from 1 to *n*
+- [x] the numbers from 1 to *n*
+- [x] the numbers from 1 to *n* in descending order
+- [x] the numbers from *-n* to *n*
+- [x] the odd numbers from 1 to *n*
+
+```
+n=int(input("Please enter a number (1-10):"))
+
+i=1
+print("Numbers from 1 to", n, ":")
+while i<=n:
+    print(i)
+    i=i+1
+
+i=n
+print("Numbers from", n, "to 1:")
+while i>=1:
+    print(i)
+    i=i-1
+i=n
+print("Numbers from", n, "to", -1*n, ":")
+while i>= (-1*n):
+    print(i)
+    i=i-1
+
+i=1
+print("Odd numbers from 1 to", n, ":")
+while i<=n:
+    print(i)
+    i=i+2
+```
 
 II - print random number of integers
 - [ ] Write an algorithm which receives an random integer and prints from 0 to it.
