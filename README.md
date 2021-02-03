@@ -78,7 +78,7 @@ while i<=n:
 ```
 
 II - print random number of integers
-- [ ] Write an algorithm which receives an random integer and prints from 0 to it.
+- [x] Write an algorithm which receives an random integer and prints from 0 to it.
 
 ```
 import random
@@ -91,7 +91,26 @@ while i <= n:
 ```
 
 III - throw dices
-- [ ] Write an algorithm which throws a dice a given number of time and count the number of time a certain number is received.
+- [x] Write an algorithm which throws a dice a given number of time and count the number of time a certain number is received.
+```
+import random
+import time
+t=int(input("Please enter given number of seconds (1-10):"))
+t0=time.time()
+t1=t0+t
+n=int(input("Please enter certain number to count (1-6):"))
+total=0
+
+print("Total seconds to throw dice:", t)
+
+while t0 <= t1:
+    dice=random.randint(1,6)
+    t0=time.time()
+    if dice == n:
+        total=total+1
+
+print("Total times number", n, "was thrown:", total)
+```
 
 IV - even numbers
 - [ ] Write an algorithm which prints all the even numbers from 0 to a given number.
