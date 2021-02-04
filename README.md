@@ -1,4 +1,4 @@
-# Loops
+# [Loops](https://github.com/becodeorg/BXL-Swartz-4-27/blob/master/1.The-Field/7.Algorithmic/03-loops.adoc)
 * Type of challenge: **learning**
 * Duration: **90 min**
 * Team challenge: **solo**
@@ -49,7 +49,6 @@ Write an algorithm which receives an integers *n* and prints:
 - [x] the numbers from 1 to *n* in descending order
 - [x] the numbers from *-n* to *n*
 - [x] the odd numbers from 1 to *n*
-
 ```
 n=int(input("Please enter a number (1-10):"))
 
@@ -79,7 +78,6 @@ while i<=n:
 
 II - print random number of integers
 - [x] Write an algorithm which receives an random integer and prints from 0 to it.
-
 ```
 import random
 n=random.randint(1,10)
@@ -93,7 +91,6 @@ while i <= n:
 
 III - throw dices
 - [x] Write an algorithm which throws a dice a given number of times and count the number of times a certain number is received.
-
 ```
 import random
 t=int(input("Please enter given number of throws (1-100):"))
@@ -112,7 +109,6 @@ print("Total times number", n, "was thrown:", total)
 
 IV - even numbers
 - [x] Write an algorithm which prints all the even numbers from 0 to a given number.
-
 ```
 n=int(input("Please enter a number (0-10):"))
 
@@ -126,7 +122,6 @@ while i<=n:
 
 V - perfect number
 - [x] Write an algorithm which verify if a given positive integer is a perfect number, meaning equal to the sum of his divisors (except himself).
-
 ```
 n=int(input("Please enter a number to verify (1-100):"))
 sum=0
